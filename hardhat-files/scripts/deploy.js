@@ -16,3 +16,5 @@ main()
     console.error(error);
     process.exitCode = 1;
   });
+
+  // whitelist goerli address : 0xcC759Ce1cCEcb63060334CA1660bfC6B92d39220

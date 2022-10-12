@@ -18,9 +18,9 @@ export default function Home() {
 
     const { chainId } = await web3Provider.getNetwork(); //get the network that the provider(metamask) is connected to
 
-    if (chainId !== 4) {
-      alert("Change newtork to rinkeby!");
-      throw new Error("Change newtork to rinkeby!");
+    if (chainId !== 5) {
+      alert("Change newtork to goerli!");
+      throw new Error("Change newtork to goerli!");
     }
     if (needSigner) {
       const signer = web3Provider.getSigner();
@@ -138,7 +138,7 @@ export default function Home() {
     } else {
       console.log("We're connected already! duh");
     }
-  }, [walletConnected]);
+  });
 
   return (
     <>
